@@ -1,0 +1,298 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #198653;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #198653;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.h1-titulo{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+/* Title Image */
+
+.title-image {
+  width: 80%;
+  position: absolute;
+  right: 5%;
+  padding-bottom: 40px;
+}
+
+.title-imageCoracao {
+  width: 70%;
+  position: absolute;
+  right: 5%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #0dc06c;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #198653;
+}
+
+.corclasse{
+  background-color: #198653;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #37be7f;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #198653;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+  
+}
+
+.perfil{
+  width: 5%;
+  position: absolute;
+}
+
+.title-imageSimbolo{
+  width: 70%;
+  padding-left: 100px;
+}
+
+/*Cadastro Perfil*/
+
+
+.cadastro-perfil{
+  background-color: #fff;
+  width: 800px;
+  height: 500px;
+  top: 100px;
+  margin-left: 50px;
+  border-radius: 1.3%;
+  display: flex;
+  
+}
+
+.coluna1{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-cadastro{
+  color: black;
+  font-family: "Montserrat";
+  font-size:xx-large;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.titulo-cadastro2{
+  color: #8f8f8f;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-size: small;
+  font-weight:800;
+  margin-left: 50px;
+}
+
+.campo{
+  color: black;
+  font-size:larger;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.input{
+  width: 300px;
+  margin-left: 50px;
+}
+
+.input2{
+  margin-top: 10px;
+  width: 300px;
+  margin-left: 50px;
+  height: 100px;
+}
+
+.coluna2{
+  display: flex;
+  flex-direction: column;
+}
+
+.campo1{
+  color: black;
+  font-size:larger;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 50px;
+  margin-top: 127px;
+}
+
+.input1{
+  width: 300px;
+  margin-left: 50px;
+}
+
+.campo2{
+  color: black;
+  font-size:larger;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 50px;
+  margin-top: 32px;
+}
+
+.campo3{
+  color: black;
+  font-size:larger;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-left: 50px;
+  margin-top: 32px;
+}
+
+.botao-cadastro{
+  margin-left: 140px;
+  margin-top: 38px;
+  width: 200px;
+}
