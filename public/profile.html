@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Zoo Planet</title>
@@ -28,22 +27,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </head>
-
 <body class="colored-section" style="overflow: hidden;">
 
     <section class="colored-section" id="title">
-
         <div class="container-fluid">
-
             <nav class="navbar navbar-expand-lg navbar-dark">
-
                 <a class="navbar-brand" href="index.html">Zoo Planet</a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -60,7 +52,7 @@
                     </ul>
                     <div id="edit-settings-options" style="display: none;">
                         <button><a id="edit" href="editar.html" style="color: black;">Editar</a></button>
-                        <button id="delete">Apagar</button>
+                        <button><a id="delete" href="deletar.html" style="color: black;">Apagar</a></button>
                     </div>
                 </div>
             </nav>
@@ -72,8 +64,6 @@
                     <li><h2 href="#" class="colored-section" id="profile-email">E-mail</h2></li>
                 </div>
             </div>
-            
-
         </div>
     </section>
 
@@ -90,7 +80,6 @@
                             var profileData = JSON.parse(xhr.responseText);
                             // Preencher os elementos HTML com os dados do perfil
                             document.getElementById("profile-name").innerText = "Nome: " + profileData.nome;
-    
                             // Atualizar os elementos HTML dentro da segunda seção também
                             document.querySelector(".profile #profile-name").innerText = "Nome: " + profileData.nome;
                             document.querySelector(".profile #profile-cpf").innerText = "CPF: " + profileData.cpf;
@@ -102,7 +91,6 @@
                 };
                 xhr.send();
             }
-    
             // Chamar a função para obter os dados do perfil quando a página é carregada
             getProfileData();
     
@@ -121,20 +109,15 @@
             document.getElementById('edit-settings').addEventListener('click', function() {
                 document.getElementById('edit-settings-options').style.display = 'block';
             });
-    
+
             document.getElementById("edit").addEventListener("click", function() {
-    window.location.href = "editar.html"; // Redireciona para editar.html
-});
+                window.location.href = "editar.html"; // Redireciona para editar.html
+            });
 
-
-
-    
             document.getElementById('delete').addEventListener('click', function() {
-                // Coloque aqui o código para a função de apagar
-                console.log('Apagar clicado');
+                window.location.href = "deletar.html"; // Redireciona para deletar.html
             });
         });
     </script>
-    
 </body>
 </html>

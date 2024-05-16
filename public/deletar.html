@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zoo Planet</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Zoo Planet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="cadastro-perfil">
+        <div class="coluna1">
+          <h1 class="titulo-cadastro">Deletar Cadastro</h1>
+          <form id="formulario-deletar">
+            <br>
+            <h3 class="campo">Nome completo</h3>
+            <input class="input" type="text" id="nome" name="nome" placeholder="Digite seu nome" readonly>
+            <h3 class="campo">E-mail</h3>
+            <input class="input" type="email" id="email" name="email" placeholder="Digite seu e-mail" readonly>
+        </div>  
+        <div class="coluna2">
+          <h3 class="campo1">CPF</h3>
+          <input class="input1" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" readonly>
+          <button type="button" id="btn-deletar" class="botao-cadastro btn btn-outline-dark btn-lg download-button" style="color: black;">Deletar</button>
+          </form>
+        </div>  
+      </div>
+    </div>
+  </section>
+  <footer class="colored-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2022 SWP</p>
+    </div>
+  </footer>
+  <!-- Adicionando o script JavaScript -->
+  <script src="deletar.js"></script>
+</body>
+</html>
