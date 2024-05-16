@@ -48,19 +48,6 @@ app.patch('/editar', (req, res) => {
     res.send('Edição realizada com sucesso!');
 });
 
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'perfil.html'));
-});
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'login.html'));
-});
-
-app.get('/logado', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'logado.html'));
-});
-
 app.get('/perfil', (req, res) => {
     // Aqui você pode adicionar a lógica para buscar os dados do perfil do usuário
     // No caso, vou apenas retornar o primeiro usuário da lista como exemplo
