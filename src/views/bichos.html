@@ -24,21 +24,13 @@
 <body>
 
   <section class="colored-section" id="title">
-
     <div class="container-fluid">
-
-      <!-- Nav Bar -->
-
       <nav class="navbar navbar-expand-lg navbar-dark">
-
         <a class="navbar-brand" href="logado.html">Zoo Planet</a>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="profile.html">
@@ -46,85 +38,60 @@
               </a>
             </li>
           </ul>
-
         </div>
       </nav>
-
-
-      <!-- Title -->
-
       <div class="row">
-
         <div class="col-lg-6">
-          <h1 class="h1-titulo big-heading">
-            "Descubra a magia da vida selvagem!"</h1>
+          <h1 class="h1-titulo big-heading">"Descubra a magia da vida selvagem!"</h1>
           <h1 class="big-heading">Descubra os Bichos!</h1>
-          <a href="index.html"><button type="button" class="btn btn-outline-light btn-lg download-button"><i></i>Mamíferos</button></a>
-          <a href="index.html"><button type="button" class="btn btn-outline-light btn-lg download-button"><i></i>Répteis</button>
-          <a href="index.html"><button type="button" class="btn btn-outline-light btn-lg download-button"><i></i>Aves</button>
-          </a>
         </div>
-
         <div class="col-lg-6">
           <img class="title-image" src="img/2093843.png" alt="#">
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <section class="white-section" id="pricing">
-
     <h2 class="section-heading">Conte-nos sobre sua experiência!</h2>
-    <p>Queremos saber sobre os bochos que você encontrou</p>
-    <button class="btn btn-lg btn-block btn-outline-dark" type="button">Descrever a sua experiência</button>
+    <p>Queremos saber sobre os bichos que você encontrou</p>
 
+    <form id="animal-form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="nome" placeholder="Nome">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="especie" placeholder="Espécie">
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="classificacao">
+          <option value="Mamífero">Mamífero</option>
+          <option value="Réptil">Réptil</option>
+          <option value="Ave">Ave</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+      </div>
+      <button type="submit" class="btn btn-primary">Adicionar Animal</button>
+    </form>
+    <br><br>
     <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Espécie</th>
-            <th scope="col">Classificação</th>
-            <th scope="col">Descrição</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Alex</td>
-            <td>Leão</td>
-            <td>Mamífero</td>
-            <td>Gostei mt</td>
-            <td><button class="btn btn-lg btn-block btn-outline-danger" type="button">Deletar</button></td>
-            <td><button class="btn btn-lg btn-block btn-outline-dark" type="button">Editar</button></td>
-          </tr>
-          <tr>
-            <td>Glória</td>
-            <td>Hipopótamos</td>
-            <td>Mamífero</td>
-            <td>Linda</td>
-            <td><button class="btn btn-lg btn-block btn-outline-danger" type="button">Deletar</button></td>
-            <td><button class="btn btn-lg btn-block btn-outline-dark" type="button">Editar</button></td>
-          </tr>
-          <tr>
-            <td>Mélman</td>
-            <td>Girafa</td>
-            <td>Mamífero</td>
-            <td>Grande</td>
-            <td><button class="btn btn-lg btn-block btn-outline-danger" type="button">Deletar</button></td>
-            <td><button class="btn btn-lg btn-block btn-outline-dark" type="button">Editar</button></td>
-          </tr>
-        </tbody>
-      </table>
-
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Espécie</th>
+          <th scope="col">Classificação</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="animal-table-body">
+        <!-- Existing animals will be listed here -->
+      </tbody>
+    </table>
   </section>
 
-
- 
-
-  <!-- Footer -->
   <footer class="white-section" id="footer">
     <div class="container-fluid">
       <i class="social-icon fab fa-facebook-f"></i>
@@ -134,6 +101,9 @@
       <p>© Copyright 2022 SWP</p>
     </div>
   </footer>
+
+  <!-- Link to bichos.js script -->
+  <script src="bichos.js"></script>
 
 </body>
 
